@@ -17,7 +17,7 @@ import { Observable } from 'rxjs';
 })
 export class WeatherService {
   private apiKey = '054ff2fe662d61440e41bd7d1dde3f9d';
-  private baseUrl = 'API_ENDPOINT';
+  private baseUrl = 'https://api.openweathermap.org/data/2.5/';
   constructor(private http: HttpClient) {}
   getCurrentWeather(city: string): Observable<any> {
     const url = `${this.baseUrl}weather?q=${city}&appid=${this.apiKey}`;

@@ -10,6 +10,8 @@ import { WeatherForecastComponent } from './weather-forecast/weather-forecast.co
 
 import { WeatherService } from './weather.service';
 import { WeatherModule } from './weather.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { WeatherModule } from './weather.module';
   ],
   imports: [
     BrowserModule,
-    WeatherModule
+    WeatherModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    WeatherService,
+    WeatherService
   ],
   bootstrap: [AppComponent],
 })

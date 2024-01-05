@@ -6,6 +6,7 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { WeatherForecastComponent } from './weather-forecast/weather-forecast.component';
 
 import { WeatherService } from './weather.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { WeatherService } from './weather.service';
   ],
   imports: [
     CommonModule,
+    FormsModule
   ],
   providers: [
     WeatherService,
